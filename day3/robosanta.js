@@ -18,7 +18,6 @@ function getUnique() {
     who = i % 2 ? robo : santa;
 
     switch (input[i]) {
-
       case '^': who.x++;
         break;
       case 'v': who.x--;
