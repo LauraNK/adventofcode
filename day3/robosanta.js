@@ -31,7 +31,6 @@ function getUnique() {
 
     var coord = who.x + 'x' + who.y;
 
-
     if (houses.indexOf(coord) == -1) {
       houses.push(coord);
       count++;
