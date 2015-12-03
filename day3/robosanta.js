@@ -4,7 +4,7 @@ var input = '>^^v^<>v<<<v<';
 
 var count = 0;
 var santa = {x: 0, y: 0};
-var robo = {x: 0,y: 0};
+var robo = {x: 0, y: 0};
 var houses = [];
 var who;
 
