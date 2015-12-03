@@ -10,17 +10,13 @@ function getUnique() {
   for (var i = 0; i < input.length; i++) {
 
     switch (input[i]) {
-      case '^':
-        x++;
+      case '^': x++;
         break;
-      case 'v':
-        x--;
+      case 'v': x--;
         break;
-      case '>':
-        y++;
+      case '>': y++;
         break;
-      case '<':
-        y--;
+      case '<': y--;
         break;
     }
     var coord = x + 'x' + y;
