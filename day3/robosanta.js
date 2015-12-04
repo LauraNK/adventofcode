@@ -1,15 +1,10 @@
 // http://adventofcode.com/day/3 
 
 var input = '>^^v^<>v<<<v<'; 
+
 var count = 0;
-var santa = {
-  x: 0,
-  y: 0
-};
-var robo = {
-  x: 0,
-  y: 0
-};
+var santa = {x: 0, y: 0};
+var robo = {x: 0, y: 0};
 var houses = [];
 var who;
 
@@ -18,7 +13,6 @@ function getUnique() {
     who = i % 2 ? robo : santa;
 
     switch (input[i]) {
-
       case '^': who.x++;
         break;
       case 'v': who.x--;
@@ -30,7 +24,6 @@ function getUnique() {
     }
 
     var coord = who.x + 'x' + who.y;
-
 
     if (houses.indexOf(coord) == -1) {
       houses.push(coord);
