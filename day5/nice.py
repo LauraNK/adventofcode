@@ -1,12 +1,12 @@
 f = open('input.txt', 'r')
-input = f.read()
+text = f.read()
 f.close()
 
-input = input.split('\n')
+text = text.split('\n')
 niceCount = 0
 vowels = 'aeiou'
 
-for i in input:
+for i in text:
     if 'ab' in i or 'cd' in i or 'pq' in i or 'xy' in i:
         continue
     vowelCount = 0
