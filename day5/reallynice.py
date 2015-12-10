@@ -1,11 +1,11 @@
 f = open('input.txt', 'r')
-input = f.read()
+text = f.read()
 f.close()
 
-input = input.split('\n')
+text = text.split('\n')
 niceCount = 0
 
-for i in input:
+for i in text:
     
     # It contains at least one letter which repeats with exactly one letter between them
     for char in range(0, len(i)-2):
