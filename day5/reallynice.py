@@ -3,7 +3,7 @@ text = f.read()
 f.close()
 
 text = text.split('\n')
-niceCount = 0
+nice_count = 0
 
 for i in text:
     
@@ -17,7 +17,7 @@ for i in text:
     # Contains a pair of any two letters that appears at least twice in the string without overlapping   
     for char in range(0, len(i)-1):
         if i.count(i[char] + i[char+1]) > 1:
-            niceCount +=1
+            nice_count +=1
             break
             
-print(niceCount)
+print(nice_count)
